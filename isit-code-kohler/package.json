@@ -1,0 +1,36 @@
+{
+  "name": "isit-code-kohler",
+  "version": "1.2.0",
+  "description": "Code samples and utilities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon jasmine-runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/charliecalvert/JsObjects.git"
+  },
+  "keywords": [
+    "Elvenware",
+    "npm",
+    "test"
+  ],
+  "author": "Charlie Calvert",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "mkdirp": "^0.5.1",
+    "uuid": "^3.1.0",
+    "walk": "^2.3.9"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-jscs": "^3.0.1",
+    "jasmine": "^2.7.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jshint-stylish": "^2.2.1"
+  }
+}
