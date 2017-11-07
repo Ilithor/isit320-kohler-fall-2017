@@ -1,0 +1,21 @@
+{
+  "name": "elven-tools",
+  "authors": [
+    "Charlie Calvert"
+  ],
+  "description": "Various front end tools for use with bower",
+  "main": "index.js",
+  "moduleType": [],
+  "keywords": [
+    "elvenware"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.elvenware.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
