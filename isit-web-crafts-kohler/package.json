@@ -1,3 +1,4 @@
+
 {
   "name": "isit-web-crafts-kohler",
   "version": "1.0.1",
@@ -68,5 +69,5 @@
 	  "setupFiles": [
 		"./source/setup-jest.js"
 	  ]
-   },
+   }
 }
