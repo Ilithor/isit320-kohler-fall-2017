@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/isit-code-kohler" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/isit-site-tools-kohler" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/isit-web-crafts-kohler" vcs="Git" />
+  </component>
+</project>

@@ -10,14 +10,13 @@ configure({adapter: new Adapter()});
 import jQuery from 'jquery';
 global.jQuery = jQuery;
 global.$ = jQuery;
-import '../fake-pub-sub';
 import raf from '../temp-poly-fills';
 
-describe('WebCrafts Sanity Test', function() {
+describe('WebCrafts Sanity Test', () => {
 
     'use strict';
 
-    it('expects true to be true', function() {
+    it('expects true to be true', () => {
         expect(true).toBe(true);
     });
 
