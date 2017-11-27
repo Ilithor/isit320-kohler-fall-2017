@@ -1,4 +1,4 @@
 import $ from 'jquery';
 global.$ = global.jQuery = $;
 
-import { requestAnimationFrame } from "./temp-poly-fills";
+import { requestAnimationFrame } from './temp-poly-fills';

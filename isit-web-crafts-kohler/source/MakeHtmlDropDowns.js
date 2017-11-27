@@ -19,20 +19,20 @@ class MakeHtmlDropDowns extends React.Component {
         value: 1
     };
 
-    handleSiteDir(event, index, value) {
+    handleSiteDir = (event, index, value) => {
         this.setState({value});
         state.siteDir = {event.target.innerHTML
     }
         siteDir = {siteDirs:[value].props.primaryText};
     }
 
-    handleDestinationDir(event, index, value) {
+    handleDestinationDir = (event, index, value) => {
         this.setState({value});
         state.destDir = {destDirs:[value].props.primaryText};
         destDir = {destDirs:[value].props.primaryText};
     }
 
-    generateHTML() {
+    generateHTML = () => {
         console.log(this.state.value);
         console.log(siteDirs[this.state.value]);
         //walking.runWalkReact('qSingle', this.state.siteDir, this.state.destDir);

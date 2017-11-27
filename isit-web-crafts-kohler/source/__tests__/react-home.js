@@ -11,9 +11,9 @@ global.$ = jQuery;
 import raf from '../temp-poly-fills';
 
 describe('React Home Tests', () => {
-	
-	'use strict';
-   
+
+    'use strict';
+
     it('expects true to be true', () => {
         expect(true).toBe(true);
     });
@@ -24,5 +24,5 @@ describe('React Home Tests', () => {
         elfDebugEnzyme.getLast(wrapper, 'h1', true);
         expect(wrapper.contains(h1tag)).toEqual(true);
     });
-    
+
 });

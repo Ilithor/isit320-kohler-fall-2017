@@ -26,8 +26,8 @@ describe('WebCrafts Sanity Test', () => {
     });
 
     it('renders HomeButtons without crashing', () => {
-		const div = document.createElement('div');
-		ReactDOM.render(<HomeButtons/>, div);
-	});
+        const div = document.createElement('div');
+        ReactDOM.render(<HomeButtons/>, div);
+    });
 
 });
