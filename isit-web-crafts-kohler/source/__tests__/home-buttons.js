@@ -10,15 +10,14 @@ configure({adapter: new Adapter()});
 import jQuery from 'jquery';
 global.jQuery = jQuery;
 global.$ = jQuery;
-import '../fake-pub-sub';
 import raf from '../temp-poly-fills';
 import '../../public/javascripts/tools/tiny-pub-sub.js';
 
-describe('WebCrafts Home Buttons Test', function() {
+describe('WebCrafts Home Buttons Test', () => {
 	
 	'use strict';
 	
-	 it('expects true to be true', function() {
+	 it('expects true to be true', () => {
 		expect(true).toBe(true);
      });
 

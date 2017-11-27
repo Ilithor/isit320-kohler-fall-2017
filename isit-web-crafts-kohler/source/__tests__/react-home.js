@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ReactHome from '../ReactHome';
-import HomeButtons from '../HomeButtons';
 import {configure, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import ElfDebugEnzyme from '../ElfDebugEnzyme';
@@ -10,14 +8,13 @@ configure({adapter: new Adapter()});
 import jQuery from 'jquery';
 global.jQuery = jQuery;
 global.$ = jQuery;
-import '../fake-pub-sub';
 import raf from '../temp-poly-fills';
 
-describe('React Home Tests', function() {
-	
-	'use strict';
-   
-    it('expects true to be true', function() {
+describe('React Home Tests', () => {
+
+    'use strict';
+
+    it('expects true to be true', () => {
         expect(true).toBe(true);
     });
 
@@ -27,5 +24,5 @@ describe('React Home Tests', function() {
         elfDebugEnzyme.getLast(wrapper, 'h1', true);
         expect(wrapper.contains(h1tag)).toEqual(true);
     });
-    
+
 });

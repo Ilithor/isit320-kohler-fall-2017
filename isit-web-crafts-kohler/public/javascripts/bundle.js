@@ -23358,6 +23358,20 @@ var HomeButtons = function (_React$Component) {
     }
 
     _createClass(HomeButtons, [{
+        key: 'makeHtml',
+        value: function makeHtml() {
+            $.publish('clientMakeHtml', {
+                message: "The user wants to makeHtml."
+            });
+        }
+    }, {
+        key: 'makeImage',
+        value: function makeImage() {
+            $.publish('clientMakeImage', {
+                message: "The user wants to makeImage."
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -23383,6 +23397,7 @@ var HomeButtons = function (_React$Component) {
                     _react2.default.createElement(
                         _RaisedButton2.default,
                         {
+                            id: 'makeImage',
                             style: buttonStyle,
                             primary: true,
                             onClick: this.makeImage },
