@@ -8,7 +8,7 @@ describe('Test Check Markdown Suite', function() {
     const checkMarkdown = require('../image-help/make-markdown/misc/check-markdown');
     const configSettings = require('../image-help/index').configSettings;
     const elfConfig = require('isit-code-kohler').elfConfig;
-//    const makeMarkdown = require('../image-help/index').makeMarkdown;
+    //    const makeMarkdown = require('../image-help/index').makeMarkdown;
     const validateSchema = require('../image-help/make-markdown/misc/validate-schema');
 
     it('expects true to be true', function() {
@@ -36,12 +36,12 @@ describe('Test Check Markdown Suite', function() {
     it('tests that we can get elvenImages', function() {
         const elvenImages = elfConfig.getElvenImages();
         //console.log(elvenImages);
-        expect(elvenImages[0].name).toBe('doc');
+        expect(elvenImages[0].name).toBe('testImages');
     });
 
-    it('tests that we can get specific elvenImage called doc', function() {
-       const elvenImage = configSettings.getSelectedElvenImage('doc');
-       expect(elvenImage.name).toBe('doc');
+    it('tests that we can get specific elvenImage called testImages', function() {
+        const elvenImage = configSettings.getSelectedElvenImage('testImages');
+        expect(elvenImage.name).toBe('testImages');
 
     });
 

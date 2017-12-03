@@ -49,7 +49,7 @@ module.exports.unused = {
 
     elvenConfig: {
         'calvert': {
-            'base-dir': '/home/charlie/',
+            'base-dir': '/home/bcuser/',
             'site-dirs': [
                 'Documents/AllTest',
                 'Git/CloudNotes/Assignments',
@@ -88,9 +88,9 @@ module.exports.unused = {
                 'cloudPath': 'https://s3.amazonaws.com/s3bucket01.elvenware.com',
                 'createSmallImages': true,
                 'imageDir': '/california1',
-                'markdownFileWithImages': '/home/charlie/Documents/AllTest/california1.md',
+                'markdownFileWithImages': '/home/bcuser/Documents/AllTest/california1.md',
                 'allImagesJsonFile': 'all-images-california1.json',
-                'notUsedDir': '/home/charlie/temp/not-used/california1'
+                'notUsedDir': '/home/bcuser/temp/not-used/california1'
             }
         ]
     }

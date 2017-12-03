@@ -9,15 +9,18 @@
         ],
         "destination-dirs": [
             "/var/www/html/AllSite/",
-            "/home/charlie/Git/charliecalvert.github.io/books/CloudNotes/Isit320/"            
+            "/home/charlie/Git/charliecalvert.github.io/books/CloudNotes/Isit320/"
         ],
-        "destination-dirs-extra": [{
-            "base": "/var/www/html/",
-            "extra": ""
-        }, {
-            "base": "/var/www/html/Assignments/",
-            "extra": "Assignments"
-        }]
+        "destination-dirs-extra": [
+            {
+                "base": "/var/www/html/",
+                "extra": ""
+            },
+            {
+                "base": "/var/www/html/Assignments/",
+                "extra": "Assignments"
+            }
+        ]
     },
     "selectedElvenImages": [
         "california1",

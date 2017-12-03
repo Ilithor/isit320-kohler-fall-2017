@@ -3,6 +3,7 @@
         "base-dir": "/home/charlie/",
         "bootswatch": "cosmo",
         "most-recent-date": "2017-04-06",
+        "highlight": true,
         "site-dirs": [
             "Git/CloudNotes/Prog272",
             "Git/CloudNotes/Isit322",
@@ -43,9 +44,9 @@
     },
     "elvenImages": [
         {
-            "name": "doc",
-            "baseDir": "The base directory where the images to be processed are found",
-            "cloudPath": "Base string found in markdown files",
+            "name": "testImages",
+            "baseDir": "/home/charlie/Git/writings/Tech/Markdown",
+            "cloudPath": "/images",
             "createSmallImages": true
         },
         {

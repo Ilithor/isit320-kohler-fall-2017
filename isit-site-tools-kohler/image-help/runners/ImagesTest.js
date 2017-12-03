@@ -10,12 +10,12 @@ const ImagesTest = (function() {
 
     ImagesTest.prototype.run = function() {
         return new Promise(function(resolve, reject) {
-        const imagesList = new ImagesList();
-        imagesList.getImagesList()
-            .then(reportMaker)
-            .then(createSmallImage.createImages)
-            .then(resolve)
-            .catch(reject)
+            const imagesList = new ImagesList();
+            imagesList.getImagesList()
+                .then(reportMaker)
+                .then(createSmallImage.createImages)
+                .then(resolve)
+                .catch(reject);
         });
     };
 

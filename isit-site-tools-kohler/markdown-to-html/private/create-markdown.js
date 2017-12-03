@@ -44,6 +44,10 @@ module.exports = function (configSummary, directoryIndex) {
     'use strict';
     return new Promise(function(resolve, reject) {
         elfLog.setLevel(elfLog.logLevelNano);
+        if (directoryIndex > configSummary['site-dirs'].length) {
+            console.log(configSummary['site-dirs']);
+            throw new Error('Index invalid for site-dirs. Are you using the right ElvenwareConfig file?');
+        }
         const directoryToWalk = configSummary['base-dir'] + configSummary['site-dirs'][directoryIndex];
         const destinationDir = configSummary['destination-dirs'][directoryIndex];
         const mostRecentDate = configSummary['most-recent-date'];
@@ -51,7 +55,7 @@ module.exports = function (configSummary, directoryIndex) {
         const highlight = configSummary['highlight'];
         fs.access(directoryToWalk, fs.F_OK | fs.R_OK, function(err) {
             if (err) {
-                throw err;
+                reject(err);
             } else {
                 elfLog.details('Folder to Walk: ' + directoryToWalk);
 
