@@ -1,16 +1,25 @@
 doctype html
 html
     head
-        block meta
             meta(charset='UTF-8')
-            meta(name='viewport', content='width=device-width')
+            meta(name='viewport', content='width=device-width, initial-scale=1')
             title= title
-        block css
-            link(rel='stylesheet', href='/bootswatch/cerulean/bootstrap.css')
-            link(rel='stylesheet', href='/stylesheets/style.css')
-            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")
-            link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
-        block script
-            script(data-main="javascripts/main.js" src="/requirejs/require.js")
+
+            script(src="bower_components/jquery/dist/jquery.js")
+
+            // Material
+            link(rel="stylesheet", href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css")
+            link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+
+            // Firebase
+            script(defer='', src='https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js')
+            script(defer='', src='https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js')
+            script(defer='', src='https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js')
+
+            // Elvenware
+            //link(rel='stylesheet', href='/stylesheets/style.css')
+            script(src="javascripts/control.js")
+            script(src="javascripts/elven-fire-login.js")
+            script(src="javascripts/elven-fire-data.js")
     body
-        block content
+            block content

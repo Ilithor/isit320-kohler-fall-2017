@@ -1,0 +1,28 @@
+mixin signInCard(title, subTitle, text)
+    #card01
+        .mdc-card
+            section.mdc-card__primary
+                h1.mdc-card__title.mdc-card__title--large #{title}
+                h2.mdc-card__subtitle #{subTitle}
+            |
+            section.mdc-card__supporting-text
+                //+baseButton('elf-sign-in', 'Sign in with Google')
+
+                p#load Firebase SDK Loading…
+
+                p Firebase sign-in status:
+                    span#elf-sign-in-status Unknown
+
+                h1 User Details
+
+                pre
+                    code#elf-user unknown
+                pre
+                    code#elf-details unknown
+                pre
+                    code#elf-oauthtoken unknown
+
+                img#elfPhoto(src='favicon.png', alt='', width="10%", min-width="120px")
+            |
+            section.mdc-card__actions
+                button#elf-sign-in.mdc-button.mdc-button--compact.mdc-card__action Sign In

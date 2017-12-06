@@ -1,14 +1,24 @@
 extends layout
+include material-mixins
+include elf-fire-materials
+include card-mixins
 
 block content
 
-    .jumbotron
-        h1 Elven Site Builder
+    +menuButton
+    div
 
-        button#makeHtml.btn.btn-warning Make HTML
-        button#makeImage.btn.btn-success Create Images
+        #signer
+            +signInCard('Google Login', 'Status')
+        #baseButtons(style="display:none")
+            +baseButtons
+        #pres(style="display:none")
+            +presidentInput
+            +presidentButtons
+        #user(style="display:none")
+            +userInput
+        #server(style="display:none")
+            +serverButtons
+            +userData
 
-    div#pageLoad
-        p To see options, select a button above.
-        
-    div#home
+    script(src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js")

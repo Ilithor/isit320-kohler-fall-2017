@@ -1,0 +1,20 @@
+[0;1;32m●[0m elven-site.service
+   Loaded: loaded (/etc/systemd/system/elven-site.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Sun 2017-12-03 15:35:04 PST; 6s ago
+ Main PID: 10104 (node)
+    Tasks: 10 (limit: 4915)
+   Memory: 65.8M
+      CPU: 834ms
+   CGroup: /system.slice/elven-site.service
+           └─10104 /usr/bin/node /home/bcuser/bin/webcrafts/bin/www
+
+Dec 03 15:35:07 pvb webcrafts[10104]: Connecting with mlab.
+Dec 03 15:35:07 pvb webcrafts[10104]: mongodb://Ilithor:DarthZorn555@ds127399.mlab.com:27399/remoteaccesstest
+Dec 03 15:35:10 pvb webcrafts[10104]: Warning: connect.session() MemoryStore is not
+Dec 03 15:35:10 pvb webcrafts[10104]: designed for a production environment, as it will leak
+Dec 03 15:35:10 pvb webcrafts[10104]: memory, and will not scale past a single process.
+Dec 03 15:35:10 pvb webcrafts[10104]: About to pass in passport to login and signup passport.init
+Dec 03 15:35:10 pvb webcrafts[10104]: Finished calling signup in passport.init
+Dec 03 15:35:10 pvb webcrafts[10104]: (node:10104) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+Dec 03 15:35:10 pvb webcrafts[10104]: Listening on port 30025
+Dec 03 15:35:10 pvb webcrafts[10104]: Db.prototype.authenticate method will no longer be available in the next major release 3.x as MongoDB 3.6 will only allow auth against users in the admin db and will no longer allow multiple credentials on a socket. Please authenticate using MongoClient.connect with auth credentials.
