@@ -2,7 +2,7 @@
 	"plugins": [ "react", "requirejs" ],
 	"rules": {
 		"react/jsx-uses-react": "error",
-		"react/jsx-uses-vars": "error:,
+		"react/jsx-uses-vars": "error",
 		"react/react-in-jsx-scope": "error",
 		"no-console": "off",
 		"indent": "error",

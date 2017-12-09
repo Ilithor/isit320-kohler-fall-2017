@@ -5,31 +5,38 @@ import RaisedButton from 'material-ui/RaisedButton';
 const siteDirs = [];
 const destDirs = [];
 
+var buttonStyle = {
+    margin: '15px'
+};
+
 class MakeHtmlDropDowns extends React.Component {
 
-    var buttonStyle = {
-        margin: '15px'
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            walk: 'Generate HTML',
+            siteDir: 'unknown',
+            destDir: 'unknown',
+            configSummary: [],
+            value: 1
+        };
 
-    this.state = {
-        walk: 'Generate HTML',
-        siteDir: 'unknown',
-        destDir: 'unknown',
-        configSummary: [],
-        value: 1
-    };
-
-    handleSiteDir = (event, index, value) => {
-        this.setState({value});
-        state.siteDir = {event.target.innerHTML
-    }
-        siteDir = {siteDirs:[value].props.primaryText};
     }
 
-    handleDestinationDir = (event, index, value) => {
-        this.setState({value});
-        state.destDir = {destDirs:[value].props.primaryText};
-        destDir = {destDirs:[value].props.primaryText};
+    handleSiteDir(event, index, value) {
+        this.setState({
+            value: value,
+            siteDir: event.target.innerHTML,
+            destDir: destDirs[value].props.primaryText
+        });
+    }
+
+    handleDestDir(event, index, value) {
+        this.setState({
+            value,
+            siteDir: siteDirs[value].props.primaryText,
+            destDir: event.target.innerHTML
+        });
     }
 
     generateHTML = () => {

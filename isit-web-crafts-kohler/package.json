@@ -27,8 +27,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "pug": "^2.0.0-rc.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "serve-favicon": "^2.4.5",
     "sharp": "^0.18.4"
   },
@@ -42,6 +42,7 @@
     "enzyme-adapter-react-16": "^1.0.2",
     "eslint": "^4.10.0",
     "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-requirejs": "^3.1.1",
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "~1.1.0",
     "grunt-contrib-jade": "~1.0.0",

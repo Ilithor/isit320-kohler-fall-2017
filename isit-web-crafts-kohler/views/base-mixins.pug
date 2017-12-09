@@ -1,0 +1,14 @@
+mixin baseButton(id, text)
+    button(id=id).mdc-button.mdc-button--raised.mdc-ripple-surface(data-mdc-auto-init='MDCRipple') #{text}
+
+mixin baseButton2(id, text)
+    button(id=id).mdl-button.mdl-js-button.mdl-button--raised #{elfDatabasePush}
+
+mixin baseInput(id, text)
+    .mdc-text-field(data-mdc-auto-init='MDCTextField')
+        input(id=id).mdc-text-field__input(type='text')
+        |
+        label.mdc-text-field__label(for='lastname')
+            | #{text}
+        |
+        .mdc-text-field__bottom-line
